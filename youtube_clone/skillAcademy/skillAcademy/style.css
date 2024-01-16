@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background:rgb(188, 168, 130);
+}
+/* --------------------------------------------NAVBAR------------------------------------- */
+nav .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 4.3rem;
+    background: #fff;
+    padding-right: 10px; 
+                  
+} 
+
+.notifications{
+    border-right: 1px solid gray; 
+
+}
+
+nav .item .left,
+nav .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem; 
+}
+nav .item.left{ 
+    padding-left:3rem ;
+    display: flex;
+    gap:0.7rem;
+} 
+
+nav .item .search i{
+    font-size:2rem;       
+}
+nav .item .left .input{
+    width: 100%; 
+    background: rgb(221, 221, 221);
+    padding:0.5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;   
+}
+nav .item .left .input input[type='search'] {
+    width:10rem;
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+nav .item .left .input input[type='search']::placeholder {
+    font-size:10px; 
+    font-weight:200;
+    color: rgb(191, 180, 180);
+    
+}
+nav .item .left .input i{
+    font-size:8px ;
+    color: gray;
+}
+
+nav .item .right .home,
+nav .item .right .network,
+nav .item .right .jobs,
+nav .item .right .messaging,
+nav .item .right .notifications,
+nav .item .right .me  
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     gap: 5px; 
+     color: rgb(164, 141, 141);
+      cursor: pointer; 
+      
+
+}
+nav .item .right .me img{
+    height: 8vh;
+    width: 90%;
+    border-radius:50%;
+    
+}
+
+nav  .item  .right  .home:hover,
+nav  .item  .right .network:hover,
+nav  .item  .right .jobs:hover,
+nav  .item  .right .messaging:hover,
+nav  .item  .right .notifications:hover,
+nav  .item  .right .me:hover,
+nav   .item  .right .down:hover{
+    color: #000;
+
+}
+
+nav .item .right .home i,
+nav .item .right .network i,
+nav .item .right .jobs i,
+nav .item .right .messaging i,
+nav .item .right .notifications i
+
+{
+    font-size:10px;
+}
+
+nav .item .right .me .down  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem; 
+    color: rgb(164, 141, 141);
+}  
+
+.item a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+
+.item a:hover{
+    color: black;
+
+}
+/* ----------------------------------LEFT SIDEBAR-------------------------------- */
+.container{
+     display: grid; 
+      grid-template-columns: 20% 45% 45%;
+     gap: 0.6rem;  
+    width: 100%;
+    margin-left: 8%;
+    margin-top:3px;
+}
+
+aside .sidebar{
+    background-color: #fff;
+    width:100%;
+    height:100%;
+    position: relative;
+    border-radius: 0.8rem;  
+      overflow: hidden;  
+    
+}
+.sidebar .top{
+    width:100%;
+    height: 12vh;
+     background-image: url("./images/background.jpg");
+    position: absolute;
+}
+.sidebar img{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #fff;
+    margin-top: 15px;
+}
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;  
+    margin-top: 40%; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-bottom: 1px solid rgb(206, 179, 179);
+    height:11vh ;
+
+}
+.sidebar .profile small{
+    font-size: 0.6rem;
+    color: gray;
+    cursor: pointer;
+    
+}
+.sidebar .profile a{
+    text-decoration: none;
+    font-size: 13x;
+    color: black;
+}
+.sidebar .profile a:hover{
+    color: gray;
+}
+.sidebar .conection{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 5px;
+    margin-top:5px;
+    padding-bottom: 0%;
+    color: gray;
+    font-size: 13px;  
+    cursor: pointer;  
+}
+.sidebar .grew{
+    position: relative;
+    display: flex;
+    justify-content: space-between;  
+    padding-bottom:5% ;  
+    font-size:13px ; 
+    padding-left: 5px;
+    cursor: pointer;
+}
+.sidebar .conection a{
+    text-decoration: none;
+    color: blue;
+}
+.sidebar .view{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 5%;
+    border-bottom: 1px solid gray;
+    padding-left: 5px;
+    cursor: pointer;
+       
+}
+.sidebar .view a{
+    text-decoration: none;
+    color: blue;
+}
+.sidebar .grew h5:hover{     
+    background-color: lightgray;
+}
+.sidebar .view h5:hover{
+    background-color:lightgrey;
+}
+.sidebar .conection:hover{
+    background-color: lightgray;
+}
+.sidebar .view a:hover{
+    background-color: lightgray;
+}
+.sidebar .premium{
+    position: relative;
+    top: 2%;
+    color: gray;
+    font-size: 14px;
+    padding-left: 5px;
+    border-bottom: 1px solid gray;
+    padding-bottom:5% ;
+}
+.sidebar .premium:hover{
+    color: black;
+    cursor: pointer;
+    background-color:lightgrey;
+}
+.sidebar .item{
+    position: relative;
+    top: 4%;
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 2px;
+    color: gray;
+    cursor: pointer;
+    border-bottom: 1px solid gray;   
+    padding-bottom: 10px;
+    border-radius: 2px;    
+}
+.sidebar .item i{
+    color: black;   
+}
+
+.recent_activity {
+    background:#fff;
+    padding: 1px  0px;
+     margin: 20px 5px; 
+    width: 110%;
+    height: 200%;
+    position: relative;
+     top: 3%; 
+}
+
+.sidebar_activity{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: gray;
+    font-size: 10px;
+} 
+.sidebar_activity h5{
+    font-size: 12px;
+    cursor:pointer;
+    
+
+}
+.groups h5{
+    color:blue;
+    margin-top: 10px;
+    font-size: 8px;
+    cursor: pointer;
+      
+}
+.groups i{
+    color: gray;  
+}
+.groups .items1{ 
+    font-size: 8px;
+    display: flex;
+    gap:5px;
+    margin-top: 5px;
+    color: gray;
+
+}
+.groups .items2{
+    font-size: 8px;
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    color: gray;
+
+}
+.hashtag{
+    color: blue;
+    margin-top: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+.hashtag ul{
+    color: gray;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+/* ------------------------------------MAIN SECTION----------------------------------------- */
+
+ main .main-section{
+   
+    height: 22vh;
+    width: 100%;
+    background-color:white;
+}
+ main .main-section .search{
+    display: flex;
+    gap: 0.3rem;   
+}
+
+main .main-section .search img{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 40%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+main .main-section .search input{
+   border-radius: 2rem; 
+   width: 90%;
+   border: 1px solid gray;
+   margin-top: 10px;
+   cursor: pointer;
+   padding-left: 5px;
+   
+}
+main .main-section .search input:hover{
+    background-color:rgb(233,233,233);
+}
+main .main-section .posts{
+    display: flex;
+    justify-content: space-between;
+ }
+ main .main-section .posts .post{
+    display: flex;
+    gap: 1rem;
+    margin:1rem 1rem;
+    cursor: pointer;
+    opacity: 0.9;
+ }
+ main .main-section .posts .post h6{
+    color: gray;
+ }
+ main .main-section .posts .post:nth-child(1) i{
+    color: lightskyblue;
+
+ }
+ main .main-section .posts .post:nth-child(2)  i{
+    color: rgb(157, 230, 157);   
+ }
+
+ main .main-section .posts  .post:nth-child(3) i{
+    color: yellow;   
+ }
+ main .main-section .posts .post:nth-child(4)  i{
+    color: pink;
+    
+ }
+
+ main .main-section .posts .post:hover{
+    background-color: lightgrey;
+    border-radius: 0.3rem;
+ }
+ 
+ main .myntra .image img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 5px;    
+}
+ 
+ main .myntra{
+    height: 80vh;
+    width: 100%;
+    margin-top: 10px;
+    background-color:white;
+
+ }
+ main .myntra .image  {
+    display:flex;
+    gap: 8px;
+    padding-top: 10px;
+    
+ }
+ main .myntra .image span{
+    display: block;
+    font-size: 11px;
+    font-weight: 100;
+ }
+    
+main .myntra .image h5{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+
+ main .ellipsis{
+    float: right;
+    margin-right: 8px;
+    margin: 2px;
+ }
+ 
+ main  .cricket img {
+    width: 100%;
+     height: 50vh; 
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ 
+ main .icon {
+    display: flex;
+    padding-left: 10px;
+    gap: 5px;
+    padding-top: 1px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5px;
+    cursor: pointer;
+ }
+ main .icon p{
+    color: gray;
+    font-size: 10px;
+    margin-left: 5px;
+    padding-top: 4px;
+       
+ }
+ main .symbol{
+    display: flex;
+    gap: 2rem;
+    margin-left: 10px;
+    color: gray;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+ main .symbol:hover{
+    background-color: lightgrey;
+ }
+
+ main .footer {
+    height: 80vh;
+    width: 100%;
+    background-color:white;
+    margin-top:15px;
+    border-bottom: 1px solid black;
+ }
+ main .ellipsis{
+    float: right;
+    margin-right: 8px;
+    margin: 2px;
+ }
+ main .footer .image img{
+    height: 3rem;
+    width: 3rem;
+     margin-left: 5px;  
+   
+}
+main .footer p{
+    font-size: 11px;
+    word-spacing: 1px;
+    margin-left: 5px;
+    padding-top: 7px;
+    
+}
+main .footer .image .caption small{
+    color: gray;
+    font-size: 11px;
+}
+main .footer .videos video{
+    height: 35vh;
+    width:100%;
+    margin-top: 7px;
+    
+}
+
+
+/*---------------------------------RIGHT SECTION-------------------------- */
+ .right-section{
+    height: 48vh;
+    width: 50%;
+    background-color:white;
+ }
+ .right-section .news{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+ }
+ .right-section .news h4{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+ }
+ .right-section .news i{
+    font-size: 13px;
+ }
+ .right-section .latest-news{
+    margin: 0.6rem 0.5rem;
+    cursor: pointer;
+ }
+ .right-section .latest-news .one{
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+ }
+.right-section .latest-news .one i{
+    font-size: 6px;
+ }
+ .right-section .latest-news .first{
+    margin: 0 1.8rem;
+    font-size: 12px; 
+ }
+
+.right-section .latest-news .first small{
+    
+    color: gray;  
+    }
+   .right-section .view{
+        height: 32vh;
+    width: 100%;
+    background-color:white; 
+    margin-top: 25px; 
+    cursor: pointer;    
+    }
+    .right-section .view .course{
+        display: flex;
+        justify-content: space-between;
+        margin:0.5rem;  
+        /* gap: 8px;  */
+        padding-top: 10px;
+       
+     }
+     .right-section .view h4{
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+     }
+     .right-section .view i{
+        font-size: 13px;
+     }
+     .right-section .latest-course{
+        margin: 0.6rem 0.5rem;
+     }
+     .right-section .latest-course .one{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+     }
+     .right-section .latest-course .one i{
+        font-size: 6px;
+     }
+     .right-section .latest-course .first{
+        margin: 0 1.8rem;
+        font-size: 12px; 
+     }
+    
+    .right-section .latest-course .first small{
+        color: gray;  
+        }
+        .right-section .feedback{
+            height: 68vh;
+            width: 100%;
+            background-color:white;
+            margin-top:20px;
+                        
+        }
+        .right-section .feedback .follow{
+            display: flex;
+            justify-content: space-between;
+             padding: 10px; 
+        }
+        .right-section .feedback .follow i{
+            font-size: 13px;
+        }
+        .right-section .feedback .follow h4{
+            font-size:12px ;
+        }
+       .right-section .feedback .unil img {
+            height: 35px;
+            width: 35px;
+            cursor: pointer;   
+        }
+        .right-section .feedback .unil{
+            display: flex;
+            
+        } 
+        .right-section .feedback .unil .comp h5{
+            font-size: 14px;
+            padding-top: 5px;
+
+        }
+        .right-section .feedback .unil .comp small{
+            font-size: 12px;
+            color:gray;
+            
+        
+        }
+        .right-section .feedback .button a{
+            text-decoration: none; 
+            display: block;
+            height: 25px;
+            width: 150px;
+             /* background-color: orange;  */
+            border: 1px solid black;
+             font-weight:100; 
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            text-align: center;
+             padding: 10px; 
+            color: black;
+            border-radius: 20px;
+             padding-top: 2px; 
+                      
+        }
+        .right-section .feedback  .button {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 6px;
+            cursor: pointer;
+        }
+        .right-section .feedback  .button a:hover{
+            background-color: rgb(231,231,231);
+        }
+
+
+
+        .right-section .feedback .linkedin img {
+            height: 30px;
+            width: 30px;  
+            margin-left: 5px;
+            margin-top: 5px;   
+            cursor: pointer;  
+        }
+        .right-section .feedback .linkedin{
+            display: flex;
+            gap: 5px;
+            
+        } 
+        .right-section .feedback .linkedin .comp h5{
+            font-size: 14px;
+            padding-top: 5px;
+
+        }
+        .right-section .feedback .linkedin .comp small{
+            color: gray;
+            font-size: 12px;
+        }
+
+        .right-section .feedback  .button2 a{
+            text-decoration: none; 
+            display: block;
+            height: 25px;
+            width: 150px;
+            border: 1px solid black;
+             font-weight:100; 
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            text-align: center;
+             padding: 10px; 
+            color: black;
+            border-radius: 20px;
+             padding-top: 2px; 
+                      
+        }
+        .right-section .feedback  .button2 {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 6px;
+            cursor: pointer;
+        }
+        .right-section .feedback  .button2 a:hover{
+            background-color: rgb(231,231,231);
+        }
+        
+        .right-section .feedback .myntra img {
+            height: 30px;
+            width: 30px;  
+            margin-left: 5px;
+            margin-top: 5px; 
+            cursor: pointer;    
+        }
+        .right-section .feedback .myntra{
+            display: flex;
+            gap: 5px;
+            
+        } 
+        .right-section .feedback .myntra .comp h5{
+            font-size: 14px;
+            padding-top: 5px;
+
+        }
+        .right-section .feedback .myntra .comp small{
+            font-size: 12px;
+            color: gray;
+        }
+
+        .right-section .feedback  .button3 a{
+            text-decoration: none; 
+            display: block;
+            height: 25px;
+            width: 150px;
+            border: 1px solid black;
+             font-weight:100; 
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            text-align: center;
+             padding: 10px; 
+            color: black;
+            border-radius: 20px;
+             padding-top: 2px; 
+                      
+        }
+        .right-section .feedback  .button3 {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 6px;
+            cursor: pointer;
+        }
+        .right-section .feedback  .button3 a:hover{
+            background-color: rgb(231,231,231);
+        }
+
+
+
+        
+
+   
+
