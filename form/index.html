@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h2 id="head">freeCodecamp Survey Form</h2>
+        <h2 id="subheading"><i>Thank you for taking the time to help us improve the plattform</i>
+    </div>
+    <form>
+    <div id="content">
+        <label>Name</label><br><br>
+        <input type="name" name="name" placeholder="Enter your name" class="box"> <br><br>
+        <label>Email</label><br><br>
+        <input type="email" name="email" placeholder="Enter your email" class="box"> <br><br>
+        <label>Age</label><br><br>
+        <input type="age" name="age" placeholder="Enter your age"required class="box"> <br><br>
+        <label>Phone</label><br><br>
+        <input type="tel" name="phone" placeholder="Enter your number" pattern="[0-9]+"required class="box"> <br><br>
+        <label>which option best describe yuor current role?</label><br><br>
+    <div id="option1">
+        <select>
+            <option name="Select your role">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full time job">Full time job</option>
+            <option value="Full time learner">Full time learner</option>
+            <option value="Other">Others</option>
+        </select>
+</div>
+<br>
+<label id="head1">Would you recoomend freeCodecamp to a friend</label><br><br>
+<input type="radio" name="radio" class="large">&nbspDefinitely<br><br>
+<input type="radio" name="radio" class="large">&nbspMay be<br><br>
+<input type="radio" name="radio" class="large">&nbsp&nbspNot Sure<br><br>
+<label>What is your favourite features for freeCodeCamp?</label><br>
+<div id="option2">
+    <select>
+        <option name="select an option">Select an option</option>
+        <option value="Challenged">Challenged</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="Open source">Open source</option>
+    </select>
+</div>
+<br><br>
+<label id="head2">What Would you like to see improved?(checjk all the apply)</label><br>
+<div id="content2">
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspFront-end projects</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspBack-end projects</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspData Visualiozations</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspChallenges</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspOpen Source Community</label><br><br>   
+     <input type="checkbox" name="checkbox" class="large"><label>&nbspGitter helps rooms</label><br><br>
+     <input type="checkbox" name="checkbox" class="large"><label>&nbspcity Meetups</label><br><br>
+     <input type="checkbox" name="checkbox" class="large"><label>&nbspWiki</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspForum</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspVideos</label><br><br>
+    <input type="checkbox" name="checkbox" class="large"><label>&nbspAdditional Courses</label><br><br>
+    <label id="head2">Any comments or suggestion</label><br></br>
+    <textarea placeholder="Enter your comment here......"></textarea><br>
+    <button><h4>Submit</h4></button>
+
+</div>
+</div>
+    </form>
+</body>
+</html>
