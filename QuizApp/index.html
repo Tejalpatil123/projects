@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <!-- *************** Home Page************************** -->
+  <div class="logo">
+
+    <div class="image">
+      <img src="testlogo.jpeg" alt="no image/">
+    </div>
+    <div class="user">
+      <h1>Hello User!</h1>
+      <small>Enter your name to continue the quiz.</small>
+    </div>
+    <br>
+    <div class="text">
+      <input type="text" id="name" placeholder="ENTER YOUR NAME...">
+      <button type="button" onclick="enter()">Enter</button>
+    </div>
+  </div>
+  <div id="home">
+    <h1>Start Quiz App</h1>
+    <button onclick="showSubjects()">Select Categery </button>
+  </div>
+  </div>
+
+
+
+  <!-- -------------------------------------Middle Page------------------------------------- -->
+
+
+
+  <div id="quiz-container" style="display: none;">
+
+    <div id="subject-list">
+      <button onclick="startQuiz('html')">HTML</button>
+      <button onclick="startQuiz('css')">CSS</button>
+      <button onclick="startQuiz('java')">Java</button>
+      <button onclick="startQuiz('javascript')">JavaScript</button>
+    </div>
+
+    <div id="quiz" style="display: none;">
+
+      <div class="new">
+        <p class="scores">SCORES:0</p>
+
+      </div>
+      <h2 id="question"></h2>
+      <div id="options-container"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+
+
+    <!-- --------------------------------------------Result Page------------------------------------ -->
+
+
+    <div id="result" style="display: none;">
+      <h2>Quiz Results</h2>
+      <p id="result-name">Name of participaints: </p>
+      <p id="total-questions">Total Questions: 0</p>
+      <p id="total-time">Total time-taken: 0</p>
+      <p id="correct-questions">Correct Answers: 0</p>
+      <p id="wrong-questions">Wrong Answers: 0</p>
+      <p id="attempted-questions">Questions Attempted: 0</p>
+      <p id="score">Score: 0%</p>
+      <button onclick="startQuizAgain()">Start Again</button>
+      <button onclick="goToHomePage()">Go to Home Page</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+
+</html>

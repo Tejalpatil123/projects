@@ -1,0 +1,276 @@
+/* style.css */
+
+ body { 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;  
+  }
+
+
+
+
+
+/* *{ 
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}*/
+/* ----------------------------------Home Page---------------------------------------- */
+.logo{
+   height: 55vh; 
+   width: 40%; 
+   /* margin: auto;  */
+  border: 1px solid gray;
+  /* margin-top: 10px; */
+  background-color: #fff;
+}
+.logo .image img{
+  font-size: 50px;
+  height: 70px;
+  width: 80px;
+  margin-top: 10px;
+}
+.logo .image{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.logo .image h1{
+  font-size:20px;
+  display: flex;
+  
+}
+.user{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column; 
+     
+ /* / position: relative; */
+   /* top:0.8rem; */
+  top: 8px;
+}
+.user h1{
+  font-size: 20px;
+  color:blue;
+  font-weight: 100;
+  
+}
+.user small{
+
+  font-size: 13px;
+  font: bold;
+}
+.text{
+     display: flex;   
+   text-align: center; 
+   justify-content: center;   
+  /* justify-content: space-between; */
+    flex-direction: row;   
+    gap: 5px;  
+      position: relative;   
+      bottom: 8px; 
+     /* top: 0.8rem;    */
+  
+}
+.text input{
+  height:5vh;
+  width: 50%;
+ 
+}
+.text ::placeholder{
+  font-size: 10px;
+}
+ /* .text button{  */
+  /* height: 1.7rem; */
+  /* width: 15%; */
+  /* background-color: rgb(20, 162, 209); */
+  /* color:white;  */
+  /* border-style: none;   
+  position: relative;
+  top: 5px;
+  text-align: center;*/
+  
+  /* margin-bottom: 50px; */
+  
+  
+
+
+/* } */
+
+.text button{
+  height: 1.7rem;
+  width: 15%;
+  position: relative;
+   /* top: 5px; */
+   bottom: 10px;
+   
+   border-style: none;
+   cursor: pointer;
+}
+/* .time{ 
+  text-align: center;
+}
+.time small{
+  color: gray;
+  font-size: 13px;
+  position: relative;
+  top: 0.2rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 4px;
+  
+    font-size: 18px;
+}*/
+
+#home button{
+  padding: 5px;
+  position: relative;
+  bottom: 15px;
+}
+#home h1{
+  font-size: 18px;
+}
+
+
+/* ------------------------------------------Middle Page-------------------------------------------- */
+
+
+  #home, #quiz, #result {
+    text-align: center;
+  }
+  
+  #quiz-container {
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(187, 138, 138, 0.1);
+    width: 40%;
+    border: 1px solid gray;
+    margin-top: 10px;
+    
+    
+
+  }
+
+  #options-container { 
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  column-gap: 8px;
+  }
+
+  #question{
+    font-size: 13px;
+  }
+ 
+  #quiz{
+    font-size:10px ;
+  }
+  #quiz h3{
+    margin-bottom: 7px;
+    text-align: center;
+  }
+
+  /* -------------------------------------Result Page------------------------- */
+  #subject-list{
+
+    display: grid;
+     grid-template-columns:repeat(2,auto) ;
+  /* grid-template-rows: repeat(2,auto); */
+    padding-top: 10px;
+    /* display: flex; */
+    /* align-content: center; */
+    /* justify-content: center; */
+
+  }
+  
+  #subject-list button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width:90%;
+    border-radius: 5px;
+      /* display: grid;  */
+     /* grid-template-columns: repeat(2,auto);  */
+  }
+
+
+  .new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: blue;
+    margin-bottom: 5px;
+  }
+
+ 
+  
+  
+  /* #options-container { 
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  column-gap: 8px;
+  }
+  /* #options-container button{ 
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  }*/
+  
+  button {
+    /* background-color: #4caf50; */
+    background-color: rgb(20, 162, 209);
+    color: #fff;
+     padding: 7px; 
+     margin-top: 10px; 
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: navajowhite;
+    
+    
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,auto); */
+  }
+  
+  button:hover {
+    /* background-color: #45a049; */
+    background-color: green;
+  }
+  /*#question{
+    font-size: 16px;
+  }
+ 
+  #quiz{
+    font-size:10px ;
+  }
+  #quiz h3{
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  */
+ /* #home button{
+    padding: 5px;
+    position: relative;
+    bottom: 15px;
+  }
+  #home h1{
+    font-size: 18px;
+  }*/
+  #result h2{
+    font-size: 17px;
+    color: rgb(20, 162, 209); 
+    font-weight: 600;
+  }
+  #result{
+    font-size: 13px;
+    font-weight: bold;
+
+   
+  }
+ 
